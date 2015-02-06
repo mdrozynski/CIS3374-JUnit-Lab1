@@ -38,10 +38,14 @@ public class CalculatorTestTest {
 
 	}
 	@Test
-	public void isEqualTest() {
+	public void isEqualTestTrue() {
 				assertTrue(calculator.isEqual(2, 2));
 		
 	}
-	
+	@Test
+	public void isEqualTestFalse() {
+				assertFalse(calculator.isEqual(2, 3));
+		
+	}
 
 }
